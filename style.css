@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+header{
+     
+    height: 655px;
+    background: linear-gradient( rgba(0, 0, 0, 0.35) , rgba(0, 0, 0, 0.35) )   , url("https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2022/01/header-hero.jpg") 
+    ;
+}
+header *{
+    color: white;
+}
+/* class repeat */
+
+.big{
+    font-size: 8rem;
+}
+
+
+
+
+/* end */
+.hero h1{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 100px;
+ 
+    padding: 20px 17vw;
+}
+nav img{
+    width: 60px;
+}
+
+.navbarlinks{
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+}
+.navbarlink{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+.navbarbutton{
+    background: transparent;
+    border: none;
+    outline: 2px solid white;
+    padding: 15px 25px;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+.herop{
+    font-size: 1.2em;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.herobu{
+    background-color: rgba(255, 255, 0, 0.856);
+    border: none;
+    color: black;
+    padding: 20px 50px;
+    border-radius: 4px;
+   z-index: 1;
+    position: relative;
+}
+.herobu::before{
+    content: "";
+    position: absolute;
+    top: 0; transition: all 0.4s ease-in  ; overflow: hidden;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.247) , rgba(0, 0, 0, 0.281));
+    opacity: 0;
+    z-index: -1;
+    border-radius: inherit;
+}
+.herobu:hover::before{
+   opacity: 1;
+}
+.se1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+.se1h2{
+    color: #536942;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.yellowline{
+    background-color: rgb(245, 245, 0);
+    width: 90px;
+    height: 3px;
+    border-radius: 9px;
+    margin: 20px 0;
+}
+.se2services{
+    display: flex;
+    width: 100%;
+
+    gap: 30px;
+    justify-content: center;
+}
+.service{
+    width: clamp(200px, 25%, 300px);
+}
+.service *{
+    color: #5f794b;
+    margin-bottom: 3px;
+}
+.service img {
+    width: 100%;
+    object-fit:cover;
+}
+.se2{
+    background-color: #f6f8f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.se2 h2{
+    color: rgb(83, 105, 66);
+    text-align: center;
+   font-weight: 400;
+  font-family: "Forum";
+    font-size: 35px;
+}
+.se2 img {
+    filter: grayscale(100%);
+    opacity: 0.6;
+    width: 43px
+    ;height: auto;
+}
+.se3{
+    display: flex;
+  
+    align-items: center;
+    gap: 30px;
+    
+    justify-content: space-between;
+    padding: 10px 20px ;
+}
+.se3left{
+display: flex;
+flex-direction: column;
+gap: 30px;
+align-items:flex-start ;
+
+}
+.se3left h4 {
+    font-size: 12px;
+}
+.se3left h2{
+    font-size: 40px;
+    font-family: "Forum";
+   
+}
+.se3left *{
+     color: #536942;
+}
+.se3 img{
+    width:clamp(200px ,30vw , 470px );
+    height:clamp(250px, 50% , 270px);
+    object-fit: cover;
+    max-width:300px ;
+    text-align: center;
+   
+}
+.se3bu{
+    background-color: transparent;
+    padding: 20px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.774);
+    border-radius: 9px;
+    transition: all 0.6s 0s ease;
+}
+.se3bu:hover{
+color: rgb(184, 218, 37);
+border-color:  rgb(184, 218, 37) ;
+}
+.se4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2021/11/footer-hero-mobile.jpg")
+ no-repeat
+    
+    ;
+    gap: 20px;
+    background-size: cover ;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+.se4 *{
+    color: #536942;
+}
+.se4 h2{
+    font-size: clamp(33px, 3rem , 60px);
+}
+.se4 p {
+    line-height: clamp(10px, 25px , 26px);
+    font-size:  1.3rem;
+    font-weight: 400;
+}
+.footernavbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    
+}
+.footernavbar a{
+    min-width: 0px;
+    color: #536942;
+    margin: 0 10px 0 0;
+    
+}
+/* *{
+    outline: 3px solid red !important;
+} */
+
+@media (max-width:768px) {
+    .se3{
+        flex-direction: column;
+    }
+    .se3left{
+        text-align: center;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .navbarlinks{
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
