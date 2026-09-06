@@ -6,7 +6,7 @@
 }
 header{
      
-    height: 655px;
+    min-height: 655px;
     background: linear-gradient( rgba(0, 0, 0, 0.35) , rgba(0, 0, 0, 0.35) )   , url("https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2022/01/header-hero.jpg") 
     ;
 }
