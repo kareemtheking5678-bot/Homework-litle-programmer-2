@@ -242,23 +242,41 @@ border-color:  rgb(184, 218, 37) ;
 }
 /* *{
     outline: 3px solid red !important;
-} */
+} /*
+    
 
-@media (max-width:768px) {
-    .se3{
+@media (max-width: 768px) {
+    /* أولاً: تقليل الهامش السفلي للـ nav لتوفير مساحة رأسية */
+    nav {
+        flex-direction: column;
+        margin-bottom: 40px; /* تم تقليله من 100px ليناسب الموبايل */
+        padding: 20px 5vw; /* تقليل البادينج الجانبي لمنع انضغاط العناصر */
+    }
+
+    /* ثانياً: تصغير الخط الضخم لكلمة nature */
+    .big {
+        font-size: 4rem; /* حجم مثالي ومناسب جداً لشاشات الموبايل */
+    }
+
+    /* ثالثاً: إضافة حشو أمان لحاوية الـ hero لضمان عدم خروج الزر */
+    .hero {
+        padding: 0 20px;
+    }
+
+    .navbarlinks {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .se3 {
         flex-direction: column;
     }
-    .se3left{
+
+    .se3left {
         text-align: center;
-    }
-    nav{
-        flex-direction: column;
-    }
-    .navbarlinks{
-        flex-direction: column;
+        align-items: center; /* لتوسيط الزر والنصوص عمودياً في الموبايل */
     }
 }
-
 
 
 
