@@ -250,7 +250,7 @@ border-color:  rgb(184, 218, 37) ;
     nav {
         flex-direction: column;
         margin-bottom: 40px; /* تم تقليله من 100px ليناسب الموبايل */
-        padding: 20px 5vw; /* تقليل البادينج الجانبي لمنع انضغاط العناصر */
+        padding: 20px 3vw; /* تقليل البادينج الجانبي لمنع انضغاط العناصر */
     }
 
     /* ثانياً: تصغير الخط الضخم لكلمة nature */
@@ -260,7 +260,7 @@ border-color:  rgb(184, 218, 37) ;
 
     /* ثالثاً: إضافة حشو أمان لحاوية الـ hero لضمان عدم خروج الزر */
     .hero {
-        padding: 0 20px;
+        padding: 10px 0;
     }
 
     .navbarlinks {
